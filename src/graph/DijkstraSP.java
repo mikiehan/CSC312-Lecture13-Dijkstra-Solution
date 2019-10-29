@@ -257,7 +257,7 @@ public class DijkstraSP {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In("TinyEWD.txt");
+        In in = new In("LectureSampleGraph.txt");
         EdgeWeightedDigraph G = new EdgeWeightedDigraph(in);
         int s = 0; // Integer.parseInt(3);
 
