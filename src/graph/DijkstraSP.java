@@ -86,14 +86,20 @@ public class DijkstraSP {
         // relax vertices in order of distance from s
         pq = new PriorityQueue<>();
         pq.add(new VertexInfo(s, distTo[s]));
+
         while (!pq.isEmpty()) {
             VertexInfo vInfo = pq.remove(); //removes the shortest distance vertex from s
-            for (DirectedEdge e : G.adj(vInfo.v)) //examine out edges of v
-                relax(e);
+            if(distTo[vInfo.v] >= vInfo.dist) {
+                for (DirectedEdge e : G.adj(vInfo.v)) { //examine out edges of v
+                    relax(e);
+                }
+            } else { //dupe case so ignore
+                //System.out.println("ignoring " + vInfo.v + " with dist " + vInfo.dist);
+            }
         }
-
         // check optimality conditions
         assert check(G, s);
+
     }
 
     // relax edge e and update pq if changed
@@ -103,6 +109,9 @@ public class DijkstraSP {
             distTo[w] = distTo[v] + e.weight(); //update the distance
             edgeTo[w] = e;
             pq.add(new VertexInfo(w, distTo[w])); //don't mind dupe in pq
+            // (ideally it should have been pq.decreaseKey and somehow
+            // pq will magically update VertexInfo of w to the new shorter distance distTo[w]
+            // but it ain't gonna happen for default Java Priority Queue so we just live with dupe)
         }
     }
 
@@ -248,7 +257,7 @@ public class DijkstraSP {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In("TinyEWD.txt");
+        In in = new In("LectureSampleGraph.txt");
         EdgeWeightedDigraph G = new EdgeWeightedDigraph(in);
         int s = 0; // Integer.parseInt(3);
 
@@ -261,7 +270,7 @@ public class DijkstraSP {
             if (sp.hasPathTo(t)) {
                 System.out.printf("%d to %d (%.2f)  ", s, t, sp.distTo(t));
                 Stack<DirectedEdge> stack = sp.pathTo(t);
-                while(!stack.isEmpty()){
+                while (!stack.isEmpty()) {
                     System.out.print(stack.pop() + "   ");
                 }
                 System.out.println();
