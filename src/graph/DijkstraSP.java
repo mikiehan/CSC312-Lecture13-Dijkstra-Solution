@@ -218,7 +218,7 @@ public class DijkstraSP {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
     }
 
-    private static class VertexInfo implements Comparable<VertexInfo> {
+    public static class VertexInfo implements Comparable<VertexInfo> {
         public int v;
         public double dist;
 

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc7ec011-96fc-4625-bcd3-236a9c9aa6f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/mst/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mst/EdgeWeightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mst/PrimMST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/DijkstraSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/DijkstraSP.java" afterDir="false" />
     </list>
@@ -103,7 +106,8 @@
       <updated>1572212193485</updated>
       <workItem from="1572212197221" duration="7324000" />
       <workItem from="1572322815148" duration="2892000" />
-      <workItem from="1572373458559" duration="345000" />
+      <workItem from="1572373458559" duration="1070000" />
+      <workItem from="1572554563403" duration="2298000" />
     </task>
     <servers />
   </component>
@@ -115,7 +119,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
