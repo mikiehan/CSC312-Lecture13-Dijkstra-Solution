@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc7ec011-96fc-4625-bcd3-236a9c9aa6f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mst/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mst/EdgeWeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mst/PrimMST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/DijkstraSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/DijkstraSP.java" afterDir="false" />
-    </list>
+    <list default="true" id="cc7ec011-96fc-4625-bcd3-236a9c9aa6f3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DijkstraSP">
+  <component name="RunManager" selected="Application.PrimMST">
     <configuration name="DijkstraSP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="graph.DijkstraSP" />
       <module name="csc312-graphs-dijkstra" />
@@ -84,12 +78,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimMST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mst.PrimMST" />
+      <module name="csc312-graphs-dijkstra" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.DijkstraSP" />
+      <item itemvalue="Application.PrimMST" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrimMST" />
         <item itemvalue="Application.DijkstraSP" />
       </list>
     </recent_temporary>
@@ -107,7 +116,7 @@
       <workItem from="1572212197221" duration="7324000" />
       <workItem from="1572322815148" duration="2892000" />
       <workItem from="1572373458559" duration="1070000" />
-      <workItem from="1572554563403" duration="2298000" />
+      <workItem from="1572554563403" duration="2911000" />
     </task>
     <servers />
   </component>
